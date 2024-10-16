@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Virgo Display";
+    src: url(../fonts/Virgo\ Display.ttf);
+}
+
+@font-face {
+    font-family: "OldLondon";
+    src: url(../fonts/OldLondon.ttf);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    max-height: 1024px;
+    max-width: 1280px;
+    position: absolute;
+    top: 60px;
+    margin: 60px;
+}
+
+
+.tittle_oracle {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.spellcards_tittle {
+    height: 150px;
+}
+
+.boxvideo_frame {
+    width: 100%;
+    padding: 60px;
+}
+
+video {
+    width: 100%;
+    height: 600px;
+    align-items: center;
+}
+
+.nav_oracle {
+    text-align: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: #797979;
+    font-family: "Virgo Display";
+    font-size: 45px;
+    padding: 65px;
+}
+
+.play_button {
+    color: #8772FF;
+}
+
+.card {
+    width: 80%;
+    height: 600px;
+    margin: 110px;
+    border: solid #797979 5px;
+    padding: 30px;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.card .header {
+    width: 100%;
+    height: auto;
+}
+
+.card .header h1 {
+    color: #797979;
+    font-family: "OldLondon";
+    font-size: 80px;
+    letter-spacing: 0.6px;
+}
+
+.card .content {
+    padding: 30px;
+}
+
+.content p {
+    color: #797979;
+    font-family: "Virgo Display";
+    font-size: 50px;    
+    text-align: justify;
+    letter-spacing: 0.6px;
+    padding: 20px;
+}
