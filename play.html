@@ -10,7 +10,7 @@
     <div id="card-display">
     </div>
     <div>
-        <nav class="nav_oracle">
+        <nav class="nav_oracle" id="nav_oracle_card">
             <ul>
                 <li>
                     <a href="./eloraculo.html">el oráculo</a>
@@ -26,8 +26,8 @@
         if (selectedCard) {
             const cardDisplay = document.getElementById('card-display');
             cardDisplay.innerHTML = `
-                <img src="${selectedCard.image}" alt="${selectedCard.title}">
-                <h2>${selectedCard.title}</h2>
+                <img src="${selectedCard.image}" alt="${selectedCard.title}" class="card_img">
+                <h1>${selectedCard.title}</h1>
                 <p>${selectedCard.description}</p>
             `;
         } else {

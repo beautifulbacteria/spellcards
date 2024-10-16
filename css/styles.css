@@ -62,8 +62,11 @@ a {
     padding: 65px;
 }
 
-.play_button {
+#play_button {
     color: #8772FF;
+    background-color: black;
+    font-family: "Virgo Display";
+    font-size: 50px;
 }
 
 .card {
@@ -127,4 +130,33 @@ a {
     letter-spacing: 0.6px;
 }
 
+h1 {
+    font-family: "OldLondon";
+    font-size: 80px;
+    color: #8772FF;
+    padding: 20px;
+}
 
+p {
+    font-family: "Virgo Display";
+    font-size: 50px;
+    letter-spacing: 0.6;
+    padding: 10px;
+    color: #797979;
+}
+
+.card_img {
+    height: 800px;
+    align-items: center;
+    text-align: center;
+}
+
+#card-display {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#nav_oracle_card {
+    padding: 60px;
+}
