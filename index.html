@@ -22,12 +22,52 @@
             <ul>
                 <li>
                     <a href="./eloraculo.html">el oráculo</a>
-                    <a class="play_button" href="">PLAY</a>
+                    <button id="play_button">PLAY</button>
                     <a href="laobra.html">la obra</a>
                 </li>
             </ul>
         </nav>
     </div>
-    
+    <script>
+        const cards = [
+            {
+                image: 'oracle spell cards/ancla.png',
+                title: 'Ancla',
+                description: 'lorem ipsum 1'
+            },
+            {
+                image: 'oracle spell cards/angel.png',
+                title: 'Ángel',
+                description: 'lorem ipsum 2'
+            },
+            {
+                image: 'oracle spell cards/balanza.png',
+                title: 'Balanza',
+                description: 'lorem ipsum 3'
+            },
+            {
+                image: 'oracle spell cards/calavera.png',
+                title: 'Calavera',
+                description: 'lorem ipsum 4'
+            },
+            {
+                image: 'oracle spell cards/campana.png',
+                title: 'Campana',
+                description: 'lorem ipsum 5'
+            }
+        ];
+
+        function getRandomCard() {
+            const randomIndex = Math.floor(Math.random() * cards.length);
+            return cards[randomIndex];
+        }
+
+        const playButton = document.getElementById('play_button');
+        playButton.addEventListener('click', function() {
+            const randomCard = getRandomCard();
+            localStorage.setItem('selectedCard', JSON.stringify(randomCard));
+            window.location.href = 'play.html';
+        });
+    </script>
 </body>
 </html>

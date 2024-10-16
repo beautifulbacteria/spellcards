@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Oracle Spell Card</title>
+    <title>Oracle Spell Cards</title>
 </head>
 <body>
+    <div id="card-display">
+    </div>
     <div>
         <nav class="nav_oracle">
             <ul>
@@ -18,5 +20,19 @@
             </ul>
         </nav>
     </div>
+    <script>
+        const selectedCard = JSON.parse(localStorage.getItem('selectedCard'));
+
+        if (selectedCard) {
+            const cardDisplay = document.getElementById('card-display');
+            cardDisplay.innerHTML = `
+                <img src="${selectedCard.image}" alt="${selectedCard.title}">
+                <h2>${selectedCard.title}</h2>
+                <p>${selectedCard.description}</p>
+            `;
+        } else {
+            document.getElementById('card-display').innerHTML = '<p>No card</p>';
+        }
+    </script>
 </body>
 </html>

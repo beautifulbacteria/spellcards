@@ -101,3 +101,30 @@ a {
     letter-spacing: 0.6px;
     padding: 20px;
 }
+
+.spell_card{
+    align-items: center;
+    text-align: center;
+}
+
+.spell_card img {
+    height: 800px;
+    align-items: center;
+}
+
+.card_tittle {
+    border: solid #797979 5px;
+    padding: 25px;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.card_tittle .header h1 {
+    color: #797979;
+    font-family: "OldLondon";
+    font-size: 80px;
+    letter-spacing: 0.6px;
+}
+
+
