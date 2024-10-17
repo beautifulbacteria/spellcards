@@ -20,8 +20,6 @@ body {
     max-height: 1024px;
     max-width: 1280px;
     position: absolute;
-    top: 60px;
-    margin: 60px;
 }
 
 
@@ -142,11 +140,11 @@ p {
     font-size: 50px;
     letter-spacing: 0.6;
     padding: 10px;
-    color: #797979;
+    color: white;
 }
 
 .card_img {
-    height: 800px;
+    height: 750px;
     align-items: center;
     text-align: center;
 }
@@ -158,5 +156,10 @@ p {
 }
 
 #nav_oracle_card {
-    padding: 60px;
+    padding: 20px;
+    color: #8772FF;
+}
+
+.play_button {
+    color: #8772FF;
 }
