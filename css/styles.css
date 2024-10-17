@@ -20,6 +20,8 @@ body {
     max-height: 1024px;
     max-width: 100%;
     position: absolute;
+    align-items: center;
+    border: solid 5px black;
 }
 
 
@@ -35,13 +37,14 @@ body {
 
 .boxvideo_frame {
     width: 100%;
-    padding: 60px;
+    padding: 65px;
 }
 
 video {
     width: 100%;
-    height: 430px;
+    height: 500px;
     align-items: center;
+    padding: 20px;
 }
 
 .nav_oracle {
