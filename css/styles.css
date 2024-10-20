@@ -19,6 +19,7 @@ body {
     color: white;
     max-height: 1024px;
     max-width: 100%;
+    width: 100%;
     position: absolute;
     align-items: center;
     border: solid 5px black;
