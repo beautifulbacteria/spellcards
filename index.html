@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Oracle Spell Cards</title>
 </head>
-<body>
+
+<body class="index">
     <div class="box_1">
         <div class="tittle_oracle">
             <img class="spellcards_tittle" src="./webdesign/spell cards_slide.png" alt="Spell Cards">
@@ -14,7 +16,7 @@
     </div>
     <div class="box_2">
         <div class="boxvideo_frame">
-            <video autoplay loop src="./webdesign/video/2.mp4"></video>
+            <video autoplay muted loop src="./webdesign/video/2.mp4"></video>
         </div>
     </div>
     <div class="box_3">
@@ -193,11 +195,18 @@
         }
 
         const playButton = document.getElementById('play_button');
-        playButton.addEventListener('click', function() {
-            const randomCard = getRandomCard();
-            localStorage.setItem('selectedCard', JSON.stringify(randomCard));
-            window.location.href = 'play.html';
+        playButton.addEventListener('click', function () {
+            // Mostrar el loader
+            document.body.innerHTML += '<div id="loader">Cargando<span class="dots">...</span></div>';
+
+            // Esperar 5 segundos antes de seleccionar la carta
+            setTimeout(function () {
+                const randomCard = getRandomCard();
+                localStorage.setItem('selectedCard', JSON.stringify(randomCard));
+                window.location.href = 'play.html';
+            }, 5000);
         });
     </script>
 </body>
+
 </html>
