@@ -63,7 +63,7 @@ ul li {
 a {
     color: #797979;
     font-family: "Virgo Display";
-    font-size: 30px;
+    font-size: 40px;
     padding: 65px;
     justify-content: center;
 }
@@ -73,6 +73,8 @@ a {
     background-color: black;
     font-family: "Virgo Display";
     font-size: 50px;
+    border: 0;
+    cursor: pointer;
 }
 
 .card {

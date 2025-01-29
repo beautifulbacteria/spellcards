@@ -196,10 +196,8 @@
 
         const playButton = document.getElementById('play_button');
         playButton.addEventListener('click', function () {
-            // Mostrar el loader
             document.body.innerHTML += '<div id="loader">Cargando<span class="dots">...</span></div>';
 
-            // Esperar 5 segundos antes de seleccionar la carta
             setTimeout(function () {
                 const randomCard = getRandomCard();
                 localStorage.setItem('selectedCard', JSON.stringify(randomCard));
