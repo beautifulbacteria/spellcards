@@ -7,10 +7,8 @@
     <title>Oracle Spell Cards</title>
 </head>
 <body>
-    <div id="card-display">
-    </div>
     <div>
-        <nav class="nav_oracle" id="nav_oracle_card">
+        <nav class="nav_oracle_page" id="nav_oracle_card">
             <ul>
                 <li>
                     <a href="./eloraculo.html">el oráculo</a>
@@ -20,6 +18,8 @@
             </ul>
         </nav>
     </div>
+    <div id="card-display">
+    </div>
     <script>
         const selectedCard = JSON.parse(localStorage.getItem('selectedCard'));
 
@@ -27,8 +27,10 @@
             const cardDisplay = document.getElementById('card-display');
             cardDisplay.innerHTML = `
                 <img src="${selectedCard.image}" alt="${selectedCard.title}" class="card_img">
-                <h1>${selectedCard.title}</h1>
-                <p>${selectedCard.description}</p>
+                <div class="tooltip">
+                    <h1>${selectedCard.title}</h1>
+                    <p>${selectedCard.description}</p>
+                </div>
             `;
         } else {
             document.getElementById('card-display').innerHTML = '<p>No card</p>';

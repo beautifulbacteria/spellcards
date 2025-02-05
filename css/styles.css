@@ -103,7 +103,7 @@ a {
 .content p {
     color: #797979;
     font-family: "Virgo Display";
-    font-size: 50px;    
+    font-size: 36px;    
     text-align: justify;
     letter-spacing: 0.6px;
     padding: 20px;
@@ -130,13 +130,13 @@ a {
 .card_tittle .header h1 {
     color: #797979;
     font-family: "OldLondon";
-    font-size: 80px;
+    font-size: 24px;
     letter-spacing: 0.6px;
 }
 
 h1 {
     font-family: "OldLondon";
-    font-size: 80px;
+    font-size: 48px;
     color: #8772FF;
     padding: 10px;
 }
@@ -150,8 +150,10 @@ p {
 }
 
 .card_img {
-    height: 750px;
+    position: relative;
+    height: 650px;
     align-items: center;
+    cursor: pointer;
     text-align: center;
 }
 
@@ -159,6 +161,7 @@ p {
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 #nav_oracle_card {
@@ -212,3 +215,28 @@ p {
     align-items: center;
 }
 
+.nav_oracle_page {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    font-size: 24px;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    width: 400px;
+    transform: translateX(-50%);
+    background-color: black;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+}
+
+.card_img:hover + .tooltip {
+    display: block;
+}
