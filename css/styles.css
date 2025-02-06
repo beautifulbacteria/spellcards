@@ -27,6 +27,9 @@ body {
 .index {
     overflow: hidden;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .tittle_oracle {
