@@ -7,6 +7,8 @@
     <title>Oracle Spell Cards</title>
 </head>
 <body>
+    <div id="card-display">
+    </div>
     <div>
         <nav class="nav_oracle_page" id="nav_oracle_card">
             <ul>
@@ -18,8 +20,6 @@
             </ul>
         </nav>
     </div>
-    <div id="card-display">
-    </div>
     <script>
         const selectedCard = JSON.parse(localStorage.getItem('selectedCard'));
 
@@ -27,14 +27,20 @@
             const cardDisplay = document.getElementById('card-display');
             cardDisplay.innerHTML = `
                 <img src="${selectedCard.image}" alt="${selectedCard.title}" class="card_img">
-                <div class="tooltip">
+                <div class="tooltip" id="card-tooltip" style="display: none;">
                     <h1>${selectedCard.title}</h1>
                     <p>${selectedCard.description}</p>
                 </div>
+                <button id="more-info-button">Saber más</button>
             `;
         } else {
             document.getElementById('card-display').innerHTML = '<p>No card</p>';
         }
+
+        document.getElementById('more-info-button').addEventListener('click', function() {
+            const tooltip = document.getElementById('card-tooltip');
+            tooltip.style.display = tooltip.style.display === 'none' ? 'block' : 'none';
+        });
     </script>
 </body>
 </html>
