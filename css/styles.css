@@ -168,7 +168,6 @@ p {
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-bottom: 30px;
 }
 
 #nav_oracle_card {
@@ -235,7 +234,8 @@ p {
 .tooltip {
     display: none;
     position: absolute;
-    left: 80%;
+    left: 50%;
+    top: calc(100% - 50px);     
     width: 400px;
     transform: translateX(-50%);
     font-size: 32px;
