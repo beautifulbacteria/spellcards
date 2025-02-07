@@ -160,7 +160,7 @@ p {
 
 .card_img {
     position: relative;
-    height: 650px;
+    height: 600px;
     align-items: center;
     cursor: pointer;
     text-align: center;
@@ -260,7 +260,7 @@ p {
     font-size: 24px;
     border: 0;
     cursor: pointer;
-    padding-top: 0px;
+    padding: 8px;
 }
 
 #more-info-button:hover {
